@@ -39,7 +39,7 @@ public boolean palindrome(String word)
 {
     String charOnly = "";
     for(int i = 0; i < word.length(); i++){
-      if(char.isLetter(word.charAt(i))
+      if(char.isLetter(word.charAt(i)==true)
         charOnly = charOnly + word.substring(i, i+1);
     }
     if(reverse(word).equals(word))

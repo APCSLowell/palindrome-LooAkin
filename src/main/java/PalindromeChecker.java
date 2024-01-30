@@ -45,7 +45,7 @@ public boolean palindrome(String word)
     String lowercase = "";
     for(int i = 0; i < charOnly.length(); i++){
       String add = charOnly.substring(i, i+1);
-      if(add.toUpperCase().equals(add))
+      if(add.toUpperCase().equals(add)==false)
         add = add.toLowerCase();
       lowercase = lowercase + add;
     }

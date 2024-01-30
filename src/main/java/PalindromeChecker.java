@@ -42,7 +42,7 @@ public boolean palindrome(String word)
       if(char.isLetter(word.charAt(i)==true)
         charOnly = charOnly + word.substring(i, i+1);
     }
-    if(reverse(word).equals(word))
+    if(reverse(charOnly).equals(charOnly))
       return true;
     else 
         return false;

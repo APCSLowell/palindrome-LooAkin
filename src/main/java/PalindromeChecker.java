@@ -42,7 +42,14 @@ public boolean palindrome(String word)
       if(char.isLetter(word.charAt(i)==true)
         charOnly = charOnly + word.substring(i, i+1);
     }
-    if(reverse(charOnly).equals(charOnly))
+    String lowercase = "";
+    for(int i = 0; i < charOnly.length(); i++){
+      String add = charOnly.substring(i, i+1);
+      if(add.toUpperCase() == add)
+        add = add.toLowerCase();
+      lowercase = lowercase + add;
+    }
+    if(reverse(lowercase).equals(lowercase))
       return true;
     else 
         return false;

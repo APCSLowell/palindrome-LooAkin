@@ -44,7 +44,7 @@ public boolean palindrome(String word)
         charOnly = charOnly + word.substring(i, i+1);
     }   
     for(int i = 0; i < charOnly.length(); i++){
-      String add = charOnly.substring(i, i+1)
+      String add = charOnly.substring(i, i+1);
         add = add.toLowerCase();
         lowercase = lowercase + add;
     }

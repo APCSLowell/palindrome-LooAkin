@@ -37,18 +37,16 @@ public void tester()
 }
 public boolean palindrome(String word)
 {
-    String charOnly = "";
-    String lowercase = "";
+    String charOnly = new String();
+    String lowercase = new String();
     for(int i = 0; i < word.length(); i++){
       if(Character.isLetter(word.charAt(i))==true)
         charOnly = charOnly + word.substring(i, i+1);
     }   
     for(int i = 0; i < charOnly.length(); i++){
-      String add = charOnly.substring(i, i+1);
-      if(add.toUpperCase().equals(add)==false){
+      String add = charOnly.substring(i, i+1)
         add = add.toLowerCase();
         lowercase = lowercase + add;
-      }
     }
     if(reverse(lowercase).equals(lowercase))
       return true;

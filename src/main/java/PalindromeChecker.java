@@ -38,11 +38,11 @@ public void tester()
 public boolean palindrome(String word)
 {
     String charOnly = "";
+    String lowercase = "";
     for(int i = 0; i < word.length(); i++){
       if(Character.isLetter(word.charAt(i))==true)
         charOnly = charOnly + word.substring(i, i+1);
-    }
-    String lowercase = "";
+    }   
     for(int i = 0; i < charOnly.length(); i++){
       String add = charOnly.substring(i, i+1);
       if(add.toUpperCase().equals(add)==false){
@@ -57,7 +57,7 @@ public boolean palindrome(String word)
 }
 public String reverse(String str)
 {
-  String sNew = "";
+  String sNew = new String;
     for(int i = str.length()-1; i >= 0; i++)
       sNew = sNew + str.substring(i, i+1);
     return sNew;

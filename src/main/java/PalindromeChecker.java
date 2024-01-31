@@ -45,9 +45,10 @@ public boolean palindrome(String word)
     String lowercase = "";
     for(int i = 0; i < charOnly.length(); i++){
       String add = charOnly.substring(i, i+1);
-      if(add.toUpperCase().equals(add)==false)
+      if(add.toUpperCase().equals(add)==false){
         add = add.toLowerCase();
-      lowercase = lowercase + add;
+        lowercase = lowercase + add;
+      }
     }
     if(reverse(lowercase).equals(lowercase))
       return true;
@@ -56,7 +57,7 @@ public boolean palindrome(String word)
 }
 public String reverse(String str)
 {
-  String sNew = "";
+  String sNew = new String;
     for(int i = str.length()-1; i >= 0; i++)
       sNew = sNew + str.substring(i, i+1);
     return sNew;
